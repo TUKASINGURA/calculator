@@ -7,26 +7,22 @@
     android:backgroundTint="@color/back"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="642dp"
-        android:text="Calcultor"
-        android:textColor="@color/purple"
-        android:textStyle="bold"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="153dp"
+        android:layout_height="102dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:srcCompat="@drawable/internet" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/second_number"
         android:layout_marginEnd="12dp"
         android:textSize="20dp"
         android:hint="Enter the second number"
@@ -37,7 +33,7 @@
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/first_number"
         android:layout_width="385dp"
         android:layout_height="46dp"
         android:layout_marginEnd="16dp"
@@ -61,7 +57,7 @@
         tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/addition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
@@ -73,7 +69,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/subtraction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
@@ -85,7 +81,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/multiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*"
@@ -93,7 +89,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.619"
-            app:layout_constraintStart_toStartOf="@+id/button"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -102,12 +97,13 @@
             android:layout_height="58dp"
             android:text="/"
             android:textSize="30dp"
+            android:id="@+id/division"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintHorizontal_bias="0.598"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -126,7 +122,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
